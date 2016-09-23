@@ -1,0 +1,1 @@
+!function(){"use strict";angular.module("homepage",[])}(),function(){"use strict";function a(){console.log("IN CONTROLLER");var a=this;a.heading='The ol\' "homepage"'}angular.module("homepage").controller("HomepageController",a)}();

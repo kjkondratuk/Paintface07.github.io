@@ -1,0 +1,32 @@
+{
+  "name": "paintface-github-io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paintface07/Paintface07.github.io.git"
+  },
+  "author": "Kevin Kondratuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paintface07/Paintface07.github.io/issues"
+  },
+  "homepage": "https://github.com/Paintface07/Paintface07.github.io#readme",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.7",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-connect": "^0.2.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "jquery": "^3.1.0"
+  }
+}
