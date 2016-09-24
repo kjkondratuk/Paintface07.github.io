@@ -1,4 +1,4 @@
 (function() {
     'use strict';
-    angular.module('homepage', []);
+    angular.module('homepage', [ 'ui.router' ]);
 })();
