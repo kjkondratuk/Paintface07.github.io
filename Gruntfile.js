@@ -38,7 +38,11 @@ module.exports = function(grunt) {
             }
         }, concat: {
             js: {
-                src: ['build/angular.min.js', 'build/angular-ui-router.min.js', 'build/script.js'],
+                src: [
+                    'build/angular.min.js',
+                    'build/angular-ui-router.min.js',
+                    'build/script.js'
+                ],
                 dest: 'dist/script.js'
             }, css: {
                 src: ['build/styles.css'],
