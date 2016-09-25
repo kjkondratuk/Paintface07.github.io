@@ -51,7 +51,7 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('default', [ 'less', 'uglify', 'copy:main', 'concat' ]);
+    grunt.registerTask('default', [ 'less', 'uglify', 'copy', 'concat' ]);
     grunt.registerTask('test', [ 'default', 'connect' ])
 
     grunt.loadNpmTasks('grunt-contrib-less');
