@@ -1,9 +1,9 @@
 {
-  "heading": "Paintface07",
+  "heading": "Paintface07 - Kevin Kondratuk",
   "menu": [
     {
       "name": "Home",
-      "dest": "https://paintface07.github.io"
+      "dest": "/"
     }, {
       "name": "My Github Profile",
       "dest": "https://github.com/Paintface07"

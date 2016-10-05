@@ -1,8 +1,7 @@
 <div class="content-sidebar">
     <ul>
-        <li><a class="sidebar-link">Link</a></li>
-        <li><a class="sidebar-link">Link</a></li>
-        <li><a class="sidebar-link">Link</a></li>
-        <li><a class="sidebar-link">Link</a></li>
+        <li data-ng-repeat="item in ctrl.model.menu track by $index">
+            <a class="sidebar-link" data-ng-href="{{ item.dest }}">{{ item.name }}</a>
+        </li>
     </ul>
 </div>
