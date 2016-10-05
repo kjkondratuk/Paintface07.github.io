@@ -1,0 +1,16 @@
+{
+  "heading": "Paintface07",
+  "menu": [
+    {
+      "name": "Home",
+      "dest": "https://paintface07.github.io"
+    }, {
+      "name": "My Github Profile",
+      "dest": "https://github.com/Paintface07"
+    }
+  ], "articles": [
+    "dist/src/articles/testArticle.json",
+    "dist/src/articles/testArticle.json",
+    "dist/src/articles/testArticle.json"
+  ]
+}

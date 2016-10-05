@@ -22,17 +22,23 @@ module.exports = function(grunt) {
             main: {
                 files: [
                     {expand: true, src: ['src/**/*.html'], dest: 'dist/'},
+                    {expand: true, src: ['src/**/*.json'], dest: 'dist/'},
+                    {expand: true, flatten: true, src: ['build/**/*.map'], dest: 'dist/'},
                     {expand: true, flatten: true, src: ['node_modules/angular/angular.min.js'], dest: 'build/'},
                     {expand: true, flatten: true, src: ['node_modules/angular-ui-router/release/angular-ui-router.min.js'], dest: 'build/'},
                 ]
             }
         }, uglify: {
             main: {
+                options: {
+                    sourceMap: true
+                },
                 files: {
                     'build/script.js': [
                         'src/**/*.module.js',
                         'src/**/*.config.js',
                         'src/**/*.routes.js',
+                        'src/**/*.service.js',
                         'src/**/*.controller.js'
                     ]
                 }
@@ -51,7 +57,7 @@ module.exports = function(grunt) {
             }
         }, watch: {
             content: {
-                files: ['!dist/', '**/*.js', '**/*.html', '**/*.less', '**/*.json', '*.js', '*.html', '*.less', '*.json'],
+                files: ['!dist/*', '!build/*', '**/*.js', '**/*.html', '**/*.less', '**/*.json', '*.js', '*.html', '*.less', '*.json'],
                 tasks: ['default']
             }
         }
@@ -59,7 +65,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', [ 'less', 'uglify', 'copy', 'concat' ]);
     grunt.registerTask('dev', ['default', 'watch']);
-    grunt.registerTask('test', [ 'default', 'connect' ])
+    grunt.registerTask('test', [ 'default', 'connect' ]);
 
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-copy');

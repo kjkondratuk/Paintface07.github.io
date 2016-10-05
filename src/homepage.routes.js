@@ -1,5 +1,6 @@
-(function() {
+// (function() {
     'use strict';
+    console.log('Instantiating routing config');
     angular.module('homepage').config(Configuration);
 
     Configuration.$inject = [ '$stateProvider', '$urlRouterProvider' ];
@@ -9,8 +10,6 @@
 
         $stateProvider.state('home', {
             url: '/home',
-            controller: "HomepageController",
-            controllerAs: "ctrl",
             views: {
                 "": {
                     templateUrl: '/dist/src/layout/layout.tpl.html'
@@ -26,4 +25,4 @@
             }
         });
     }
-})();
+// })();
