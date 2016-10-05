@@ -1,7 +1,13 @@
 <div class="content-body">
-    <article data-ng-repeat="article in ctrl.model.displayArticles track by $index">
+    <article data-ng-repeat="(index, article) in ctrl.model.displayArticles track by $index">
         <h2>{{ article.title }}</h2>
         <p><i>{{ article.date }} - {{ article.author }}</i></p>
         <div ng-bind-html="article.content"></div>
+        <div>
+            <span><i>Labels: </i></span>
+            <div data-ng-repeat="label in article.labels track by $index" class="label-link">
+                <a data-ng-href="#" href="#">{{ label }}</a>
+            </div>
+        </div>
     </article>
 </div>
