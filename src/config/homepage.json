@@ -7,6 +7,15 @@
     }, {
       "name": "My Github Profile",
       "dest": "https://github.com/Paintface07"
+    }, {
+      "name": "RateBot",
+      "dest": "https://github.com/Paintface07/RateBot"
+    }, {
+      "name": "deckbrew-api",
+      "dest": "https://github.com/Paintface07/deckbrew-api"
+    }, {
+      "name": "spring-integration-playground",
+      "dest": "https://github.com/Paintface07/spring-integration-playground"
     }
   ], "articles": [
     "dist/src/articles/testArticle.json",
