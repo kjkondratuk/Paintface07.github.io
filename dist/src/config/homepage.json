@@ -8,6 +8,9 @@
       "name": "My Github Profile",
       "dest": "https://github.com/Paintface07"
     }, {
+      "name": "LinkedIn",
+      "dest": "https://www.linkedin.com/in/kevin-kondratuk-61030829"
+    }, {
       "name": "RateBot",
       "dest": "https://github.com/Paintface07/RateBot"
     }, {
@@ -16,9 +19,6 @@
     }, {
       "name": "spring-integration-playground",
       "dest": "https://github.com/Paintface07/spring-integration-playground"
-    }, {
-      "name": "LinkedIn",
-      "dest": "https://www.linkedin.com/in/kevin-kondratuk-61030829"
     }
   ], "articles": [
     "dist/src/articles/testArticle.json",
