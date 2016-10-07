@@ -1,3 +1,5 @@
+@import "overrides";
+
 @dark-grey: #2d2d2a;
 @grey: #4c4c47;
 @light-grey: #72726a;
@@ -45,7 +47,6 @@ body {
           cursor: pointer;
 
           .sidebar-link {
-            cursor: hand;
             background-color: @dark-grey;
             color: @heading-red;
             padding: .5rem;
@@ -54,6 +55,7 @@ body {
             width: 90%;
             text-align: center;
             font-size: 14pt;
+            text-decoration: none;
           }
         }
       }
@@ -90,15 +92,4 @@ body {
       }
     }
   }
-}
-
-.unstyled-list {
-  list-style-type: none;
-
-  /* Override webkit default list styles for the menu */
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-margin-start: 0;
-  -webkit-margin-end: 0;
-  -webkit-padding-start: 0;
 }
